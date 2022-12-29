@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="box">
+            <span id="r">
+                <span id="rc"></span>
+            </span>
+            <span id="g">
+                <span id="gc"></span>
+            </span>
+            <span id="b">
+                <span id="bc"></span>
+            </span>
+        </div>
+
+    </body>
+    <style>
+    *{
+        margin: auto;
+        position: absolute;
+        background-color: black;
+    }
+
+    #box {
+        position: absolute;
+        margin: 200px 350px;
+    }
+
+    #r{
+        background-color:transparent;
+        position: absolute;
+        border-left: 6px solid rgb(241, 82, 29);
+        width: 100px;
+        height: 100px;
+        border-radius:50%;
+        rotate: 0deg;
+        animation: rv;
+        animation-duration: 3s;
+        animation-delay:0s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        
+    }
+   
+    #g{
+        background-color:transparent;
+        position: absolute;
+        border-left: 6px solid rgb(58, 234, 164);
+        width: 100px;
+        height: 100px;
+        border-radius:50%;
+        rotate: 120deg
+        ;
+        animation: gv;
+        animation-duration: 3s;
+        animation-delay:0s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+
+    }
+
+    #b{
+        background-color:transparent;
+        position: absolute;
+        border-left: 6px solid rgb(31, 91, 243);
+        width: 100px;
+        height: 100px;
+        border-radius:50%;
+        rotate: 240deg
+        ;
+        animation: bv;
+        animation-duration: 3s;
+        animation-delay:0s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+
+    }
+
+    #rc{
+        position: absolute;
+        margin-top: 10px;
+        background-color:red;
+        border-radius :50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    #gc{
+        position: absolute;
+        margin-top: 10px;
+        background-color:greenyellow;
+        border-radius :50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    #bc{
+        position: absolute;
+        margin-top: 10px;
+        background-color:rgb(0, 13, 255);
+        border-radius :50%;
+        width: 20px;
+        height: 20px;
+    }
+    @keyframes bv{
+        from{
+            rotate: 240deg;
+        }
+        to{
+            rotate: 600deg;
+        }
+    }
+
+    @keyframes gv{
+        from{
+            rotate: 120deg;
+        }
+        to{
+            rotate: 480deg;
+        }
+    }
+
+    @keyframes rv{
+        from{
+            rotate: 0deg;
+        }
+
+        to{
+            rotate: 360deg;
+        }
+        /* 20%{
+            rotate: 72deg;
+        }
+        
+        40%{
+            rotate: 144deg;
+        }
+        
+        60%{
+            rotate: 216deg;
+        }
+
+        
+        80%{
+            rotate: 288deg;
+        }
+
+        
+        100%{
+            rotate: 360deg;
+        } */
+    }
+    
+
+
+</style>
+    <script>
+</script>
+</html>
