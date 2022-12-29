@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+
+        <h3>My Name Is Ahvi !</h3>
+        <input type="range" onchange="c()" id="s"> <br>
+        <input type="number" onchange="d()" id="t">
+
+
+
+    </body>
+
+    <style>
+    #s{
+        cursor: pointer;
+        accent-color: rgb(85, 245, 93);
+        width: 100%;
+        forced-color-adjust: blue;
+        scrollbar-track-color: rgb(182, 89, 89);
+
+    }
+
+</style>
+<script>
+    
+    function c(){
+        var r = document.getElementById("s").value;
+        var x = document.getElementById("t");
+        x.value=r;
+    }
+
+    function d(){
+        var x = document.getElementById("t").value;
+        var r = document.getElementById("s");
+        r.value = x;
+    }
+
+</script>
+</html>
